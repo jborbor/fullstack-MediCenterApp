@@ -1,0 +1,71 @@
+# ============================
+# Java / Spring Boot
+# ============================
+**/target/
+**/build/
+**/.classpath
+**/.project
+**/.settings/
+**/.idea/
+**/*.iml
+
+# ============================
+# Node / Angular (Frontend)
+# ============================
+**/node_modules/
+**/dist/
+**/.angular/
+**/tmp/
+**/out-tsc/
+**/bazel-out/
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Angular cache
+**/.angular/cache
+
+# Coverage / Reports
+**/coverage/
+**/testem.log
+**/libpeerconnection.log
+
+# Misc Angular
+**/.sass-cache/
+**/connect.lock
+**/typings
+**/.history/
+
+# ============================
+# Docker / Database
+# ============================
+docker-data/
+*.sql
+*.dump
+
+# ============================
+# IDEs and Editors
+# ============================
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+
+# Eclipse / JetBrains
+*.launch
+
+# ============================
+# OS generated files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# Env / Secrets
+# ============================
+.env
+.env.*.local
