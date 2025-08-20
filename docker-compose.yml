@@ -2,22 +2,22 @@ services:
 
   mysql:
     image: mysql:8.0
-    container_name: mysql-db
+    container_name: medi-center-mysql-db
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: db_medicenter
+      MYSQL_DATABASE: db_medi_center
     ports:
       - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
-      - ./medi_center_database/sql:/docker-entrypoint-initdb.d
+      - ./medi-center-database/sql:/docker-entrypoint-initdb.d
     networks:
       - mcenter-network
 
-  backend:
-    build: ./medi_center_backend
-    container_name: backend
+  medi-center-backend:
+    build: ./medi-center-backend
+    container_name: medi-center-backend
     mem_limit: 800m
     ports:
       - "8080:8080"
@@ -26,9 +26,9 @@ services:
     depends_on:
       - mysql
 
-  frontend:
-    build: ./medi_center_frontend
-    container_name: frontend
+  medi-center-frontend:
+    build: ./medi-center-frontend
+    container_name: medi-center-frontend
     mem_limit: 800m
     ports:
       - "4200:80"
