@@ -1,0 +1,128 @@
+<div class="min-h-screen flex flex-col bg-gray-50">
+  <!-- Header con MediCenter -->
+  <header class="flex items-center justify-between px-8 py-6">
+    <div class="flex items-center space-x-3">
+      <span class="text-3xl font-bold text-gray-800">MediCenter</span>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="flex-grow flex items-center justify-center px-6">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-2xl w-full max-w-5xl"
+    >
+      <!-- Columna izquierda (Bienvenida centrada con texto grande) -->
+      <div
+        class="hidden md:flex flex-col justify-center items-center text-center p-16 bg-gray-50 rounded-l-2xl"
+      >
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-6 leading-tight">
+          Bienvenido a <span class="text-blue-600">MediCenter</span>
+        </h1>
+        <p class="text-gray-600 text-2xl max-w-lg leading-relaxed">
+          Gestiona tus citas médicas y resultados en línea
+        </p>
+      </div>
+
+      <!-- Columna derecha (Formulario de login) -->
+      <div class="flex flex-col justify-center p-10">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Iniciar Sesión</h2>
+        <p class="text-gray-500 mb-6">Accede a tu cuenta de MediCenter</p>
+
+        <form class="space-y-4">
+          <!-- Email -->
+          <div>
+            <input
+              type="email"
+              placeholder="Correo electrónico"
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="relative">
+            <input
+              type="password"
+              placeholder="Contraseña"
+              class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <span
+              class="absolute right-3 top-3 cursor-pointer text-gray-400 hover:text-gray-600"
+            >
+              <!--Queda pendiente icono del ojo-->
+            </span>
+          </div>
+
+          <!-- Recordarme + Olvidar -->
+          <div class="flex items-center justify-between text-sm">
+            <label class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                class="rounded text-blue-600 focus:ring-blue-500"
+              />
+              <span class="text-gray-600">Recordarme</span>
+            </label>
+            <a href="#" class="text-blue-600 hover:underline"
+              >¿Olvidaste tu contraseña?</a
+            >
+          </div>
+
+          <!-- Botón login -->
+          <button
+            type="submit"
+            class="w-full py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+          >
+            Iniciar Sesión
+          </button>
+        </form>
+
+        <!-- Divider -->
+        <div class="flex items-center my-6">
+          <div class="flex-grow border-t"></div>
+          <span class="mx-3 text-gray-400 text-sm">o</span>
+          <div class="flex-grow border-t"></div>
+        </div>
+
+        <!-- Login con Google y Microsoft -->
+        <div class="flex space-x-4">
+          <!-- Botón Google -->
+          <button
+            class="flex items-center justify-center w-1/2 py-2 border rounded-lg hover:bg-gray-50 transition"
+          >
+            <img
+              src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+              alt="Google"
+              class="w-5 h-5 mr-2"
+            />
+            <span class="text-gray-700 font-medium">Google</span>
+          </button>
+
+          <!-- Botón Microsoft -->
+          <button
+            class="flex items-center justify-center w-1/2 py-2 border rounded-lg hover:bg-gray-50 transition"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+              alt="Microsoft"
+              class="w-5 h-5 mr-2"
+            />
+            <span class="text-gray-700 font-medium">Microsoft</span>
+          </button>
+        </div>
+
+        <!-- Registro -->
+        <p class="text-center text-sm text-gray-600 mt-6">
+          ¿No tienes cuenta?
+          <a href="#" class="text-blue-600 font-medium hover:underline"
+            >Regístrate</a
+          >
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6">
+    © 2025 MediCenter. <a href="#" class="hover:underline">Términos</a> ·
+    <a href="#" class="hover:underline">Privacidad</a>
+  </footer>
+</div>

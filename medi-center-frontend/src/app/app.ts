@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Login } from './pages/login/login';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [Login],
+  templateUrl: './app.html', 
+  styleUrls: ['./app.css']
 })
 export class App {
   protected title = 'medi-center-frontend';
